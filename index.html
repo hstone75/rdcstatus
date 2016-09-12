@@ -1,15 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="robots" content="index, follow">
 		<title>Status</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-		<link rel="stylesheet" href="milligram.min.css">
 		<link rel="stylesheet" href="style.css">
-		
-		<link rel="icon" href="https://raw.githubusercontent.com/pyupio/statuspage/master/template/favicon.png">
+		<link rel="icon" href="https://raw.githubusercontent.com/jayfk/statuspage/master/template/favicon.png">
+		<link rel="prefetch" type="application/l10n" href="translations.ini" />
 	</head>
 	<body>
 
@@ -19,8 +18,7 @@
 				<section class="container">
 
 					<a class="navigation-title" href="">
-						
-						<img class="img" src="https://raw.githubusercontent.com/pyupio/statuspage/master/template/logo.png" height="30">
+						<img class="img" src="https://raw.githubusercontent.com/jayfk/statuspage/master/template/logo.png" height="30">
 						<h1 class="title">Status</h1>
 					</a>
 
@@ -33,56 +31,56 @@
 				
 					
 					<div class="panel major outage">
-						Major outage on Facilities, Financial Services, Project Administration Services.
+						<span data-l10n-id="Major-outage">Major outage</span> <span data-l10n-id="on">on</span> Facilities, Financial Services, Project Administration Services.
 					</div>
 					
 					<div class="panel degraded performance">
-						Degraded performance on Proposal Development Services, Proposal Submission Services.
+						<span data-l10n-id="Degraded-performance">Degraded performance</span> <span data-l10n-id="on">on</span> Proposal Development Services, Proposal Submission Services.
 					</div>
 					
 				
 
-				<h4>Services</h4>
+				<h4 data-l10n-id="systems">Systems</h4>
 				<ul class="systems">
 					
 					<li>
-						Facilities <span class="status major outage">major outage</span>
+						Facilities <span class="status major outage" data-l10n-id="major-outage">major outage</span>
 					</li>
 					
 					<li>
-						Financial Services <span class="status major outage">major outage</span>
+						Financial Services <span class="status major outage" data-l10n-id="major-outage">major outage</span>
 					</li>
 					
 					<li>
-						Kuali Coeus <span class="status operational">operational</span>
+						Kuali Coeus <span class="status operational" data-l10n-id="operational">operational</span>
 					</li>
 					
 					<li>
-						Online Services <span class="status operational">operational</span>
+						Online Services <span class="status operational" data-l10n-id="operational">operational</span>
 					</li>
 					
 					<li>
-						Project Administration Services <span class="status major outage">major outage</span>
+						Project Administration Services <span class="status major outage" data-l10n-id="major-outage">major outage</span>
 					</li>
 					
 					<li>
-						Proposal Development Services <span class="status degraded performance">degraded performance</span>
+						Proposal Development Services <span class="status degraded performance" data-l10n-id="degraded-performance">degraded performance</span>
 					</li>
 					
 					<li>
-						Proposal Submission Services <span class="status degraded performance">degraded performance</span>
+						Proposal Submission Services <span class="status degraded performance" data-l10n-id="degraded-performance">degraded performance</span>
 					</li>
 					
 				</ul>
 
-				<h4>Incidents</h4>
+				<h4 data-l10n-id="incidents">Incidents</h4>
 				
 					
 					<div class="incident">
-						<span class="date">2016-09-12 17:25:55 UTC</span>
+						<span class="date moment">2016-09-12 17:25:55 UTC</span>
 
 						
-							<span class="label degraded performance float-right">degraded performance</span>
+							<span class="label degraded performance float-right" data-l10n-id="degraded-performance">degraded performance</span>
 						
 						
 							<span class="label system float-right">Proposal Development Services</span>
@@ -92,16 +90,16 @@
 						<hr/>
 
 						<span class="title">Power Outage</span>
-						<p><p>Power Outage at the Main Building and Administration Building.</p>
-</p>
+						<p>Power Outage at the Main Building and Administration Building.</p>
+
 						
 					</div>
 					
 					<div class="incident">
-						<span class="date">2016-09-12 17:23:34 UTC</span>
+						<span class="date moment">2016-09-12 17:23:34 UTC</span>
 
 						
-							<span class="label major outage float-right">major outage</span>
+							<span class="label major outage float-right" data-l10n-id="major-outage">major outage</span>
 						
 						
 							<span class="label system float-right">Facilities</span>
@@ -113,8 +111,8 @@
 						<hr/>
 
 						<span class="title">Power Outage</span>
-						<p><p>Power Outage at the Main Building and Administration Building.</p>
-</p>
+						<p>Power Outage at the Main Building and Administration Building.</p>
+
 						
 					</div>
 					
@@ -125,12 +123,11 @@
 			<footer class="footer">
 				<section class="container">
 					<hr/>
-					
-					<p>Status page hosted by GitHub, generated with <a href="https://github.com/pyupio/statuspage">pyupio/statuspage</a></p>
+					<p>Status page hosted by GitHub, generated with <a href='https://github.com/jayfk/statuspage'>jayfk/statuspage</a></p>
 				</section>
 			</footer>
 
 		</main>
-
+		<script src="statuspage.js" type="text/javascript"></script>
 	</body>
 </html>
